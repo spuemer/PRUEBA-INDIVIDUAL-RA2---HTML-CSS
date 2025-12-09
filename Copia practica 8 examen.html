@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volibear Jungla — Mini Proyecto</title>
+  <link rel="stylesheet" href="Copia practica 8 examen.css">
+  <link rel="icon" type="image/png" href="img/icono lol.png">
+</head>
+<body>
+
+  <!-- CABECERA GLOBAL DEL SITIO -->
+  <header class="site-header">
+    <h1>Volibear • Jungla</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#build">Build & Runas</a></li>
+        <li><a href="#routes">Rutas</a></li>
+        <li><a href="#tips">Consejos</a></li>
+      </ul>
+    </nav>
+      <!-- BOTÓN HAMBURGUESA -->
+  <button class="open-menu" aria-label="Abrir menú lateral">☰</button>
+   <!-- MENÚ LATERAL -->
+  <nav id="sideMenu" class="side-menu">
+    <ul>
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#build">Build & Runas</a></li>
+      <li><a href="#routes">Rutas</a></li>
+      <li><a href="#tips">Consejos</a></li>
+    </ul>
+  </nav>
+  </header>
+
+
+
+ 
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <h2>Volibear — Jungla</h2>
+      <p>Luchador resistente y agresivo en la jungla. Perfecto para ganks tempranos y control de objetivos.</p>
+      <a href="https://youtu.be/tqlpf1tbEr4" target="_blank"><img src="img/volibear splash art.jpg" alt="Volibear Splash"/></a>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidades">
+            <figure>
+                <img src="img/Pasiva.png" alt="Pasiva">
+                <figcaption><strong>Pasiva – Tormenta Incesante:</strong><p> Volibear aumenta su velocidad de ataque y lanza relámpagos a enemigos cercanos.</p></figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Primera habilidad.jpg" alt="Volibear habilidad 1">
+                <figcaption><strong>Q – Impacto Atronador:</strong><p> Volibear corre hacia un enemigo, lo aturde y gana velocidad de movimiento.</p></figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Segunda habilidad.png" alt="Volibear habilidad 2">
+                <figcaption><strong>W – Acometida Frenética:</strong><p> Inflinge daño al objetivo, marcándolo; si lo vuelve a golpear, se cura.</p></figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/tercera habilidad.png" alt="Volibear habilidad 3">
+                <figcaption><strong>E – Rompecielos:</strong><p> Invoca un relámpago que daña a los enemigos y otorga un escudo a Volibear.</p></figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/Cuarta habilidad.jpg" alt="Volibear habilidad 4">
+                <figcaption><strong>R – Heraldo de la Tormenta:</strong><p> Volibear salta, cae con fuerza, daña, relentiza, obtiene vida y desactiva torretas.</p></figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- TABLA: Build y Runas -->
+    <section id="build">
+      <h2>Build y Runas recomendadas</h2>
+      <table>
+        <thead>
+          <tr><th>Elemento</th><th>Descripción</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Machete del Cazador + Pociones</td><td>Inicio de jungla, sustain y clear rápido</td></tr>
+          <tr><td>Cuchilla Negra</td><td>Daño adicional y movilidad</td></tr>
+          <tr><td>Malla de Vida / Corazón de Hielo</td><td>Supervivencia en peleas de equipo</td></tr>
+          <tr><td>Botas blindadas</td><td>Resistencia y velocidad de movimiento</td></tr>
+        </tbody>
+      </table>
+      <h3>Runas principales</h3>
+      <ul>
+        <li>Conquistador</li>
+        <li>Triunfo</li>
+        <li>Tenacidad / Leyenda: Tenacidad</li>
+        <li>Último esfuerzo</li>
+      </ul>
+    </section>
+
+    <!-- RUTAS -->
+    <section id="routes">
+      <h2>Rutas de Jungla</h2>
+      <p>Ruta agresiva: Blue → Gromp → Wolves → Red → Krugs → Gank</p>
+      <p>Ruta segura: Red → Raptors → Wolves → Gank nivel 4-5 según oportunidades</p>
+    </section>
+
+    <!-- CONSEJOS -->
+    <section id="tips">
+      <h2>Consejos y Combos</h2>
+      <ul>
+        <li>Combo básico: E → Q → Auto → W → R</li>
+        <li>Mantén visión profunda antes de gankear</li>
+        <li>No iniciar sin follow-up del equipo</li>
+        <li>Usa movilidad de items para flanquear</li>
+      </ul>
+      <h3>Errores comunes</h3>
+      <ol>
+        <li>Forzar ganks sin visión</li>
+        <li>Ignorar objetivos neutrales</li>
+        <li>Construir solo daño cuando se necesita tanque</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <p><a href="#hero">&copy; 2025 — Mini-Proyecto Volibear</a></p>
+  </footer>
+
+  <script>
+    const sideMenu = document.getElementById("sideMenu");
+    const toggleBtn = document.querySelector(".open-menu");
+
+    toggleBtn.addEventListener("click", () => {
+      sideMenu.classList.toggle("active");
+      toggleBtn.classList.toggle("active");
+      toggleBtn.textContent =
+        sideMenu.classList.contains("active") ? "✖" : "☰";
+    });
+  </script>
+
+</body>
+</html>
